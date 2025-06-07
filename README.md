@@ -1,11 +1,11 @@
 # Beamer's nvim config
-Nvim config tested on FreeBSD with lazy plugin manager
+Neovim config tested on FreeBSD with lazy plugin manager
 
-## Pre-requisits
-install lua51 and luarocks51 and git
+## Pre-requisites
+install `neovim`, `lua51`, `luarocks51` and `git`
 
 ## On OpenBSD
-Installing pkg_add luarocks-lua51 is enough, it will also install various lua versions. You will get reminder to create the necessary simlinks for luarocks.
+Installing luarocks with `pkg_add luarocks-lua51` is usually enough. It will also install various lua versions. You will be reminded to create the necessary simlinks for luarocks:
 ```
  ln -sf /usr/local/bin/luarocks-5.1 /usr/local/bin/luarocks
  ln -sf /usr/local/bin/luarocks-admin-5.1 /usr/local/bin/luarocks-admin
@@ -17,7 +17,7 @@ ln -sf /usr/local/bin/lua51 /usr/local/bin/lua
 
 ### On FreeBSD
 ```
-pkg install lua51 git
+pkg install lua51 luarocks51
 ```
 You might need to simlink lua51 to lua:
 ```
@@ -26,10 +26,10 @@ ln -s /usr/local/bin/lua51 /usr/local/bin/lua
 
 
 ## Getting started
-- Backup your original nvim configuration in ~/.confing/nvim/
-- Clone this repo to your nvim config folder
+- Backup your original nvim configuration in `~/.confing/nvim/` !
+- Clone this repo to your nvim config folder `git clone https://github.com/beammeout/nvim-bsd-lazy.git ~/.config/nvim`.
 - Upon nvim start Lazy screen should popup, and offer you sync and install for all the plugins.
-- Restart nvim, check for any errors in the bottom.
+- Any errors will appear in the lazy nvim popup.
 - Tom make sure if everything works run `:checkhealth` after nvim start. Scroll through the list and check for ERRORS.
 
 ## Troubleshooint
