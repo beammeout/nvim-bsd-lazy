@@ -4,7 +4,7 @@ Neovim config tested on FreeBSD with lazy plugin manager
 ## Pre-requisites
 install `neovim`, `lua51`, `luarocks51` and `git`
 
-## On OpenBSD
+### On OpenBSD
 Installing luarocks with `pkg_add luarocks-lua51` is usually enough. It will also install various lua versions. You will be reminded to create the necessary simlinks for luarocks:
 ```
  ln -sf /usr/local/bin/luarocks-5.1 /usr/local/bin/luarocks
