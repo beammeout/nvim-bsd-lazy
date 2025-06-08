@@ -4,6 +4,17 @@ Neovim config tested on FreeBSD with lazy plugin manager
 ## Pre-requisites
 install `neovim`, `lua51`, `luarocks51` and `git`
 
+## Limitations
+
+- Mason works but installation from nvim after typing :Mason is unfortunatelt not supported for BSD. I keep it for now for folks who want to run this on Linux.
+
+**Freebsd**:
+- Language servers need to be usually compilled manually see LSP.md
+
+
+** OpenBSD*:
+- Many language servers won't compile or run on OpenBSD
+
 ### On OpenBSD
 Installing luarocks with `pkg_add luarocks-lua51` is usually enough. It will also install various lua versions. You will be reminded to create the necessary simlinks for luarocks:
 ```
