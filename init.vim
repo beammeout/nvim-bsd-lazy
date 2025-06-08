@@ -86,7 +86,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Copy yanks and deletes to system clipboard
 "set clipboard+=unnamedplus
 " Auto identation 
-au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null 
+"au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null 
  
  
 " Enable highlighting for the search via / 
@@ -106,22 +106,22 @@ set foldmethod=expr
 "--------- Syntax, highlighting related settings ------------------
 " Markdown related autocomannds:
 "Auto-recognize .md files as Markdown
-au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
-" User hybrid relative numbers for markdown files only
-au BufNewFile,BufFilePre,BufRead *.md set number relativenumber
-" Autosave the buffer after edit (for Markdown files only)
-au BufNewFile,BufRead *.md :au TextChanged,TextChangedI <buffer> silent write
-"au BufNewFile,BufRead *.md :au TextChanged,TextChangedI <buffer> write
-" Disable CMP auto-completion for Markdown
-au BufNewFile,BufFilePre,BufRead *.md lua require('cmp').setup.buffer { enabled = false }
-" Enable TreeSitter for Markdown files
-au BufNewFile,BufFilePre,BufRead *.md :TSBufEnable highlight 
-
-" Relative numbers plus actual number
-"set number relativenumber
-
-"Auto-recognize vagrantfiles
-au BufNewFile,BufFilePre,BufRead vagrantfile set filetype=ruby
+"au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+"" User hybrid relative numbers for markdown files only
+"au BufNewFile,BufFilePre,BufRead *.md set number relativenumber
+"" Autosave the buffer after edit (for Markdown files only)
+"au BufNewFile,BufRead *.md :au TextChanged,TextChangedI <buffer> silent write
+""au BufNewFile,BufRead *.md :au TextChanged,TextChangedI <buffer> write
+"" Disable CMP auto-completion for Markdown
+"au BufNewFile,BufFilePre,BufRead *.md lua require('cmp').setup.buffer { enabled = false }
+"" Enable TreeSitter for Markdown files
+"au BufNewFile,BufFilePre,BufRead *.md :TSBufEnable highlight 
+"
+"" Relative numbers plus actual number
+""set number relativenumber
+"
+""Auto-recognize vagrantfiles
+"au BufNewFile,BufFilePre,BufRead vagrantfile set filetype=ruby
 
 
 
