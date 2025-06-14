@@ -4,13 +4,14 @@ Neovim config tested on FreeBSD with lazy plugin manager
 ## Pre-requisites
 install `neovim`, `lua51`, `luarocks51` and `git`
 
+
 ### On OpenBSD
 Installing luarocks with `pkg_add luarocks-lua51` is usually enough. It will also install various lua versions. You will be reminded to create the necessary simlinks for luarocks:
 ```
  ln -sf /usr/local/bin/luarocks-5.1 /usr/local/bin/luarocks
  ln -sf /usr/local/bin/luarocks-admin-5.1 /usr/local/bin/luarocks-admin
 ```
-Do the same for lua, if the simlink was not automatically created:
+Do the same for lua, if the symlink was not automatically created:
 ```
 ln -sf /usr/local/bin/lua51 /usr/local/bin/lua
 ```
@@ -19,7 +20,7 @@ ln -sf /usr/local/bin/lua51 /usr/local/bin/lua
 ```
 pkg install lua51 luarocks51
 ```
-You might need to simlink lua51 to lua:
+You might need to symlink lua51 to lua:
 ```
 ln -s /usr/local/bin/lua51 /usr/local/bin/lua
 ```
@@ -31,6 +32,13 @@ ln -s /usr/local/bin/lua51 /usr/local/bin/lua
 - Upon nvim start Lazy screen should popup, and offer you sync and install for all the plugins.
 - Any errors will appear in the lazy nvim popup.
 - Tom make sure if everything works run `:checkhealth` after nvim start. Scroll through the list and check for ERRORS.
+
+## Limitations
+
+- Mason works but installation from nvim b typing `:Mason` is not supported for BSD. Keeping it for folks who want to run this on Linux.
+- Language servers need to be usually compiled manually see LSP.md
+- Many language servers won't compile or run on OpenBSD
+
 
 ## Troubleshooint
 ### I'm getting clone failed error.
