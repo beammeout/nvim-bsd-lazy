@@ -59,7 +59,7 @@ And manually git clone the treesitter:
 Start lazy, you might get a warning, but it should work from now on.
 
 ### Language servers won't install
-- See Limitations
+- See [Limitations](#limitations)
 ### Language servers are isntalled, but not recognized by neovim
-- Make sure the lsp is in the path
+- Make sure the lsp executable is in the path
 - Make sure it is correctly initialized in the lua config
