@@ -34,8 +34,8 @@ ln -s /usr/local/bin/lua51 /usr/local/bin/lua
 
 ## Limitations
 - Mason plugin for LSP installation most likely won't work on *BSD systems. Read more in this [issue](https://github.com/mason-org/mason.nvim/issues/382) 
-- Some language servers can be compilled manually.
-- As long as the LSP is in the PATH and is executable, it should work
+- Some language servers can be compiled manually, others won't work at all.
+- As long as the LSP is in the PATH and is executable, it should work.
 
 ## Troubleshooting
 ### I'm getting clone failed error.
@@ -58,8 +58,9 @@ And manually git clone the treesitter:
 
 Start lazy, you might get a warning, but it should work from now on.
 
-### Language servers won't install
+### I can't install language servers via Mason
 - See [Limitations](#limitations)
-### Language servers are isntalled, but not recognized by neovim
+
+### Language servers are installed, but not recognized by neovim
 - Make sure the lsp executable is in the path
-- Make sure it is correctly initialized in the lua config
+- Make sure lsp is correctly initialized in the lua config. There are examples for `lua_ls`, `pyright`, `terraformls` and `marksman` in the `lua/plugins/coding.lua` file.
