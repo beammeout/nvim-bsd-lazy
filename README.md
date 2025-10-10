@@ -32,13 +32,14 @@ ln -s /usr/local/bin/lua51 /usr/local/bin/lua
 - Any errors will appear in the lazy nvim popup.
 - Tom make sure if everything works run `:checkhealth` after nvim start. Scroll through the list and check for ERRORS.
 
-## Limitations
+# Limitations
 - Mason plugin for LSP installation most likely won't work on *BSD systems. Read more in this [issue](https://github.com/mason-org/mason.nvim/issues/382) 
 - Some language servers can be compiled manually, others won't work at all.
 - As long as the LSP is in the PATH and is executable, it should work.
+- Keeping in mind that some neovim plugins are only tested on Linux, MacOs and sometimes Windows. Some weird behaviour is possible.
 
-## Troubleshooting
-### I'm getting clone failed error.
+# Troubleshooting
+## I'm getting clone failed error.
 
 This often happens with treesitter:
 ```
@@ -58,12 +59,12 @@ And manually git clone the treesitter:
 
 Start lazy, you might get a warning, but it should work from now on.
 
-### I can't install language servers via Mason
+## I can't install language servers via Mason
 - See [Limitations](#limitations)
 
-### Language servers are installed, but not recognized by neovim
+## Language servers are installed, but not recognized by neovim
 - Make sure lsp executable and is in the PATH variable of your shell.
 - Make sure lsp is correctly initialized in the lua config. There are examples for `lua_ls`, `pyright`, `terraformls` and `marksman` in the `lua/plugins/coding.lua` file.
 
-### Something in this repo is wrong, doesn't work, can be done better, etc.
+## Something in this repo is wrong, doesn't work, can be done better, etc.
 - Good job spotting that! You can open an issue or submit a PR, but no guarantee I will take action. Nothing personal, just want to spend some time touching grass 🍀😇.
