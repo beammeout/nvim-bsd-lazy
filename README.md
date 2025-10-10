@@ -33,7 +33,7 @@ ln -s /usr/local/bin/lua51 /usr/local/bin/lua
 - Tom make sure if everything works run `:checkhealth` after nvim start. Scroll through the list and check for ERRORS.
 
 # Limitations
-- Mason plugin for LSP installation most likely won't work on *BSD systems. Read more in this [issue](https://github.com/mason-org/mason.nvim/issues/382) 
+- Mason plugin for LSP installation by typing `:Mason` is not supported on *BSD systems. I'm keeping for folks that want to use this on Linux. Read more in this [issue](https://github.com/mason-org/mason.nvim/issues/382) 
 - Some language servers can be compiled manually, others won't work at all.
 - As long as the LSP is in the PATH and is executable, it should work.
 - Keeping in mind that some neovim plugins are only tested on Linux, MacOs and sometimes Windows. Some weird behaviour is possible.
