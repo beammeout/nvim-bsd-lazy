@@ -66,5 +66,8 @@ Start lazy, you might get a warning, but it should work from now on.
 - Make sure lsp executable and is in the PATH variable of your shell.
 - Make sure lsp is correctly initialized in the lua config. There are examples for `lua_ls`, `pyright`, `terraformls` and `marksman` in the `lua/plugins/coding.lua` file.
 
+## Your key bindings are a mess! I don't like them
+- Cannot but agree ¯\_(ツ)_/¯ . The bindings are in `init.vim` and `lua/init.lua` files. You can change/remove them as you see fit.
+
 ## Something in this repo is wrong, doesn't work, can be done better, etc.
 - Good job spotting that! You can open an issue or submit a PR, but no guarantee I will take action. Nothing personal, just want to spend some time touching grass 🍀😇.
