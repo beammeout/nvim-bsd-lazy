@@ -62,5 +62,5 @@ Start lazy, you might get a warning, but it should work from now on.
 - See [Limitations](#limitations)
 
 ### Language servers are installed, but not recognized by neovim
-- Make sure the lsp executable is in the path
+- Make sure lsp executable and is in the PATH variable of your shell.
 - Make sure lsp is correctly initialized in the lua config. There are examples for `lua_ls`, `pyright`, `terraformls` and `marksman` in the `lua/plugins/coding.lua` file.
