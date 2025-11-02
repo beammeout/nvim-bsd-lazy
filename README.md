@@ -47,6 +47,11 @@ I've updated the nvim config with this change on a branch [native-nvim-lsp-confi
 -  Terraformls has issues - it is not auto attached to newly open buffers
 -  You need latest stable version of neovim
 
+You can clone this branch to `~/.config/nvim` with:
+`git clone -b native-nvim-lsp-config https://github.com/beammeout/nvim-bsd-lazy.git ~/.config/nvim`
+
+After you startnvim run `:Lazy`, clean nvim-lspconfig and install all nvim package updates.
+
 # Troubleshooting
 ## I'm getting clone failed error.
 
