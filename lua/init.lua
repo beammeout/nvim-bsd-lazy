@@ -31,3 +31,7 @@ vim.keymap.set('n', '<localleader>rn', vim.lsp.buf.rename, bufopts)
 vim.keymap.set('n', '<localleader>ca', vim.lsp.buf.code_action, bufopts)
 vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
 vim.keymap.set('n', '<localleader>f', function() vim.lsp.buf.format { async = true } end, bufopts)
+
+-- Require lsp.lua file with native nvim LSP and diagnostic config
+require("lsp")
+
