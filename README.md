@@ -43,7 +43,7 @@ Instead of nvim-lspconfig, it is now recommended to use native nvim lsp config. 
 [nvim-lspconfig migration](https://github.com/neovim/nvim-lspconfig?tab=readme-ov-file#important-%EF%B8%8F)
 This step is necessary because nvim-lspconfig will soon be deprecated. Until then you'll get annoying deprecation notice at every start.
 
-I've updated the nvim config with this change on a branch native-nvim-lsp-config. However there are few downsides:
+I've updated the nvim config with this change on a branch [native-nvim-lsp-config](https://github.com/beammeout/nvim-bsd-lazy/tree/native-nvim-lsp-config). However there are few downsides:
 -  Terraformls has issues - it is not auto attached to newly open buffers
 -  You need latest stable version of neovim
 
