@@ -38,6 +38,20 @@ ln -s /usr/local/bin/lua51 /usr/local/bin/lua
 - As long as the LSP is in the PATH and is executable, it should work.
 - Keeping in mind that some neovim plugins are only tested on Linux, MacOs and sometimes Windows. Some weird behaviour is possible.
 
+# Native nvim lsp
+Instead of nvim-lspconfig, it is now recommended to use native nvim lsp config. More here:
+[nvim-lspconfig migration](https://github.com/neovim/nvim-lspconfig?tab=readme-ov-file#important-%EF%B8%8F)
+This step is necessary because nvim-lspconfig will soon be deprecated. Until then you'll get annoying deprecation notice at every start.
+
+I've updated the nvim config with this change on a branch [native-nvim-lsp-config](https://github.com/beammeout/nvim-bsd-lazy/tree/native-nvim-lsp-config). However there are few downsides:
+-  Terraformls has issues - it is not auto attached to newly open buffers
+-  You need latest stable version of neovim
+
+You can clone this branch to `~/.config/nvim` with:
+`git clone -b native-nvim-lsp-config https://github.com/beammeout/nvim-bsd-lazy.git ~/.config/nvim`
+
+After you start nvim run `:Lazy`, clean nvim-lspconfig and install all nvim package updates.
+
 # Troubleshooting
 ## I'm getting clone failed error.
 
